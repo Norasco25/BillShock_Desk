@@ -1,0 +1,20 @@
+body.staff main { max-width: 70rem; }
+nav.tabs { display: flex; gap: .5rem; align-items: center; margin: .5rem 0 1rem; flex-wrap: wrap; }
+nav.tabs .spacer { flex: 1; }
+.tab[aria-current=page] { background: var(--brand); color: var(--brand-ink); }
+table { width: 100%; border-collapse: collapse; background: var(--card); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+th, td { text-align: left; padding: .6rem .75rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-size: .8rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+tr.click { cursor: pointer; } tr.click:hover { background: var(--bg); }
+.pill { display: inline-block; font-size: .75rem; font-weight: 700; padding: .1rem .5rem; border-radius: 999px; border: 1px solid var(--line); margin-right: .25rem; }
+.pill.urgent, .pill.bad { border-color: var(--bad); color: var(--bad); } .pill.ok { border-color: var(--brand); color: var(--brand); }
+.cols { display: grid; gap: 1rem; grid-template-columns: 1fr 1fr; } @media (max-width: 900px) { .cols { grid-template-columns: 1fr; } }
+.stack > * + * { margin-top: 1rem; }
+pre.notice-text { white-space: pre-wrap; background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: .75rem; max-height: 18rem; overflow: auto; font: .85rem/1.4 ui-monospace, Menlo, monospace; }
+.gate { border-radius: 10px; padding: .75rem 1rem; border: 1px solid var(--line); } .gate.blocked { border-color: var(--bad); } .gate.open { border-color: var(--brand); }
+.gate ul { margin: .4rem 0 0; padding-left: 1.2rem; }
+textarea.draft { min-height: 14rem; font: .9rem/1.45 ui-monospace, Menlo, monospace; }
+.why { font-size: .85rem; color: var(--muted); }
+.stat { display: inline-block; min-width: 9rem; margin: 0 1rem 1rem 0; } .stat b { display: block; font-size: 1.6rem; }
+.small { font-size: .85rem; } .mono { font-family: ui-monospace, Menlo, monospace; }
+.entry-form { display: grid; gap: .5rem; grid-template-columns: 1fr 1fr; } .entry-form .wide { grid-column: 1 / -1; }

@@ -1,0 +1,16 @@
+{
+  "name": "bill-shock-desk",
+  "version": "1.0.0",
+  "description": "Helps households respond to utility shutoff and past-due notices, with a staff review console.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/server.js",
+    "dev": "node --disable-warning=ExperimentalWarning --watch src/server.js",
+    "test": "node --disable-warning=ExperimentalWarning --test \"test/*.test.js\"",
+    "keygen": "node scripts/keygen.js"
+  }
+}
